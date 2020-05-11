@@ -15,7 +15,7 @@ def count(request):
     for word in wordlist:
         if word in worddictionary:
             worddictionary[word] += 1
-    else:
+        else:
             worddictionary[word] = 1
             
     sortedwords = sorted(worddictionary.items(), key=operator.itemgetter(1), reverse=True)
